@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPay風 新規登録ページ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="paypay-logo.png" alt="PayPay ロゴ" class="logo">
+        </header>
+        <div class="registration">
+            <ul class="tabs">
+                <li class="tab active">新規登録</li>
+                <li class="tab">ログイン</li>
+            </ul>
+            <form id="registration-form">
+                <input type="tel" placeholder="携帯電話番号" class="input-field" name="phone-number" required>
+                <div class="password-field">
+                    <input type="password" placeholder="パスワード" class="input-field" name="password" required>
+                </div>
+                <button type="button" class="invite-code">紹介コードを入力する</button>
+                <p class="terms">
+                    PayPay利用規約, PayPayマネーライト資金決済法表示, PayPayマネー資金決済法表示, プライバシーポリシー
+                </p>
+                <button type="submit" class="register-btn">上記に同意して新規登録</button>
+            </form>
+        </div>
+        <div class="alternative-register">
+            <p>新しい電話番号に変更した場合</p>
+            <div class="register-options">
+                <button class="register-yahoo">Yahoo! JAPAN IDで新規登録</button>
+                <button class="register-softbank">ソフトバンク・ワイモバイル・LINEMOで新規登録</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
